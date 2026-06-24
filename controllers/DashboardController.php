@@ -1,12 +1,23 @@
 <?php
 class DashboardController {
+    private $userModel;
+
+    public function __construct() {
+        // Inisialisasi model secara terpusat pada objek controller
+        $this->userModel = new User();
+    }
+
+    /**
+     * Menampilkan Halaman Utama Dashboard (Sistem Internal Backend)
+     */
     public function index() {
-        Session::start();
+        // Proteksi Keamanan: Validasi Sesi Otentikasi Masuk Pengguna
         Session::checkLogin();
         
-        $userModel = new User();
-        $totalUsers = $userModel->countAll();
+        // Mengambil metrik data dinamis dari database untuk komponen widget card
+        $totalUsers = $this->userModel->countAll();
         
-        require_once 'views/dashboard/index.php';
+        // Memuat berkas antarmuka grafis (View) Dashboard Core Phase 2
+        require_once 'views/dashboard/dashboard.php';
     }
 }

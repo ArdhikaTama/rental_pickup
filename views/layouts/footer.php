@@ -1,11 +1,4 @@
-<!-- COPYRIGHT FOOTER -->
-    <footer class="bg-dark text-white-50 py-3 text-center border-top border-secondary">
-        <div class="container">
-            <p class="mb-0 small">&copy; <?= date('Y'); ?> <span class="text-orange fw-bold">PREMIUM PICKUP RENTAL</span>. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- BOOTSTRAP 5.3 BUNDLE WITH POPPER -->
+<!-- BOOTSTRAP 5.3 BUNDLE WITH POPPER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- MAIN JAVASCRIPT & FRONTEND VALIDATION -->
