@@ -1,0 +1,112 @@
+:root {
+    --primary-orange: #ff7a00;
+    --light-gray: #f2f2f2;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.text-orange {
+    color: var(--primary-orange) !important;
+}
+
+.bg-orange {
+    background-color: var(--primary-orange) !important;
+}
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: #e66e00;:root {
+    --primary-orange: #ff7a00;
+    --dark-bg: #1a1a1a;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.text-primary-orange, .text-orange {
+    color: var(--primary-orange) !important;
+}
+
+.bg-orange {
+    background-color: var(--primary-orange) !important;
+}
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #e66e00;
+    color: white;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.floating-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.auth-wrapper {
+    background-color: #f8f9fa;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+    transform: translateY(-1px);
+}
+
+.border-orange-container {
+    border: 1px solid #ffbc80;
+}
+
+.card-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px !important;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.floating-img {
+    animation: bounce 4s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.py-1-5 {
+    padding-top: 0.38rem;
+    padding-bottom: 0.38rem;
+}

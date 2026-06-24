@@ -1,0 +1,12 @@
+# Mengabaikan log error PHP atau Apache
+*.log
+.DS_Store
+Thumbs.db
+
+# Mengabaikan file konfigurasi IDE (jika ada)
+.idea/
+.vscode/
+
+# Mengabaikan aset yang diupload oleh user di masa depan
+uploads/*
+!uploads/.gitkeep
